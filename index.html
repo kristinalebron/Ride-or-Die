@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride or Die - Murder Mystery Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <h1>Ride or Die</h1>
+        <p>Your city becomes the scene of the mystery!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main class="home">
+        <!-- How It Works Section -->
+        <section class="intro">
+            <h2>How It Works</h2>
+            <p>Schedule your game, choose your driver, and solve the mystery as they guide you through the city!</p>
+            <button class="cta-button">Schedule Your Game</button>
+        </section>
+
+        <!-- Features Section -->
+        <section class="features-container">
+            <div class="card">
+                <h3>Interactive Gameplay</h3>
+                <p>Track clues, use hints, and make guesses in real-time.</p>
+                <button class="cta-button" onclick="showExample()">See Example</button>
+                <div class="example-content" id="example-content" style="display: none;">
+                    <h4>Example Clues:</h4>
+                    <ul>
+                        <li><strong>Clue 1:</strong> A shadowy figure was last seen near the fountain in Central Park.</li>
+                        <li><strong>Clue 2:</strong> A torn piece of fabric matches the costume of the theater troupe.</li>
+                        <li><strong>Clue 3:</strong> The suspect left a note with strange symbols—can you decode it?</li>
+                    </ul>
+                    <img src="Hieroglyphs_from_the_tomb_of_Seti_I.jpg" alt="Example clue image" style="width: 100%; max-width: 300px; margin-top: 10px;">
+                </div>
+            </div>
+            <div class="card">
+                <h3>Choose Your Driver</h3>
+                <p>Pick a guide based on their profile and ratings.</p>
+                <button class="cta-button">Choose Your Driver</button>
+            </div>
+            <div class="card">
+                <h3>Explore Your City</h3>
+                <p>Discover local landmarks and hidden spots as part of the game.</p>
+                <button class="cta-button">Explore the City</button>
+            </div>
+        </section>
+
+        <!-- Story Selection Section -->
+        <section class="story-selection">
+            <h2>Choose a Story</h2>
+            <p>Select a mystery to begin your adventure:</p>
+            <div class="story-grid">
+                <div class="card">
+                    <h3>The Case of the Missing Heirloom</h3>
+                    <p>Uncover clues to find a priceless family treasure.</p>
+                    <button class="cta-button">Choose This Story</button>
+                </div>
+                <div class="card">
+                    <h3>The Phantom of the Park</h3>
+                    <p>Solve the mystery of strange sightings in the city park.</p>
+                    <button class="cta-button">Choose This Story</button>
+                </div>
+                <div class="card">
+                    <h3>The Secret of the Silent Library</h3>
+                    <p>Discover the truth behind a decades-old mystery in the library.</p>
+                    <button class="cta-button">Choose This Story</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; 2024 Ride or Die. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function showExample() {
+            const exampleContent = document.getElementById('example-content');
+            if (exampleContent.style.display === 'none') {
+                exampleContent.style.display = 'block';
+            } else {
+                exampleContent.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
